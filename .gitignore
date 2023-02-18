@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+resources
+dist
+mta_archives
+default_env.json
+API_KEY.txt
+mta-op-*
+*-dbg.*js
+*-preload.js
+approuter/webapp

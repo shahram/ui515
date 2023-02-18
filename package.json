@@ -1,0 +1,24 @@
+{
+  "name": "ui515",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ui5 serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ui5-middleware-cfdestination": "^0.10.6"
+  },
+  "ui5": {
+    "dependencies": [
+      "ui5-middleware-cfdestination"
+    ]
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.9"
+  }
+}
