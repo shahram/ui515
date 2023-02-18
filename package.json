@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "mbt build",
     "start": "ui5 serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
