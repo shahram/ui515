@@ -14,16 +14,13 @@
   "devDependencies": {
     "ui5-middleware-cfdestination": "^0.10.6"
   },
-  "engines": {
-    "node": "18.14.0",
-    "npm": "9.3.1"
-  },
   "ui5": {
     "dependencies": [
       "ui5-middleware-cfdestination"
     ]
   },
   "dependencies": {
+    "@ui5/cli": "^3.0.2",
     "node-fetch": "^2.6.9"
   }
 }
