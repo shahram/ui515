@@ -10,11 +10,26 @@ sap.ui.define([
          let myNewNum = myNum + 1
          myTextElem.setText(myNewNum)
       },
-      onInit: function () {
+      onInit: function() {
+         let controller = this;
+         let reqSettings = {
+            "url": "/user-api/currentUser",
+            "method": "GET"
+         }
+         $.ajax(reqSettings) 
+            .done(function(response) {
+               let userInfo = JSON.parse(response);
+               let userFirstName = userInfo.firstname
+               controller.getView().byId("appPanel")
+                  .setHeaderText(`Hello, ${userFirstName}!`)
+            });
+         
+      }
+/*       onInit: function () {
          let oModel = new JSONModel(
             sap.ui.require.toUrl("de/jlabs/demo/Data.json")
          )
          this.getView().setModel(oModel)
-      }
+      } */
    })
 })
