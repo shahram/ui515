@@ -13,6 +13,7 @@ modules:
       memory: 256M
     requires:
       - name: html5-destination
+      - name: html5-uaa
 
   - name: ui5
     type: html5
@@ -31,3 +32,12 @@ resources:
       service-plan: lite
       service: destination
       path: ./destinations.json
+
+  - name: html5-uaa
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      config:
+        xsappname: 'ui5-approuter-uaa'
+        tenant-mode: dedicated
