@@ -1,6 +1,8 @@
 ID: ui5-approuter
 _schema-version: 3.2.0
 version: 1.0.0
+description: 'MTA Descriptor Model UI515'
+copyright: 'Solaroid'
 parameters:
   enable-paralle-deployments: true
 
