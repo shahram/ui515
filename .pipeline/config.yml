@@ -15,9 +15,9 @@ stages:
   Acceptance:
     cloudFoundryDeploy: false
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
-    cfOrg: "jlabscforg"
+    cfOrg: "solaroidcforg"
     cfSpace: "dev"
-    cfAppName: "app"
+    cfAppName: "ui515"
     cfCredentialsId: "sola-deploy-to-cf"
     uiVeri5ExecuteTests: false
 
@@ -27,7 +27,7 @@ stages:
     cfOrg: "solaroidcforg"
     cfSpace: "dev"
     cfAppName: "ui515"
-    cfCredentialsId: "deploy-to-cf"
+    cfCredentialsId: "sola-deploy-to-cf"
     tmsUpload: true
 
 steps:
