@@ -10,3 +10,4 @@ mta-op-*
 *-preload.js
 approuter/webapp
 api_key.txt
+coverage
